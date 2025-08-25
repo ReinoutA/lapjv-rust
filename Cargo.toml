@@ -7,13 +7,10 @@ license = "MIT"
 documentation = "https://docs.rs/lapjv"
 homepage = "https://github.com/Antti/lapjv-rust"
 repository = "https://github.com/Antti/lapjv-rust.git"
+edition = "2021"
 
 build = "build.rs"
-include = [
-    "**/*.rs",
-    "Cargo.toml",
-    "README.md"
-]
+include = ["**/*.rs", "Cargo.toml", "README.md"]
 
 [badges]
 travis-ci = { repository = "Antti/lapjv-rust", branch = "master" }
@@ -23,7 +20,7 @@ maintenance = { status = "as-is" }
 nightly = []
 
 [dependencies]
-ndarray = "0.13"
+ndarray = "0.16.1"
 num-traits = "0.2"
 log = "0.4"
 
